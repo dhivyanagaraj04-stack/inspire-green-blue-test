@@ -3,7 +3,7 @@ export async function onRequestPost(context) {
     const user_name = formdata.get("user");
     const password = formdata.get("psw");
     // await context.env.USER_DATA_STORE.put(user_name, password);
-    const getData = await context.env.USER_DATA_STORE.get('key');
+    const getData = await context.env.USER_DATA_STORE.get('testt');
     console.log(getData, 'test');
     if(getData === password) {
      return new Response(`${user_name} and ${password}`);   
